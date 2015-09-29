@@ -46,7 +46,9 @@ h6 {
 	margin-right: 10%;
 }
 
-/* HEADER SECTION */
+/* ----------------------
+HEADER SECTION 
+-------------------------*/
 #header { 
 	background-color: #763978;
 	height: 50px;
@@ -79,25 +81,9 @@ header p {
 }
 
 
-
-/*#stars .column {
-	position: relative;
-	float: left;
-}*/
-
-/*#stars #cynthia {
-	float: left;
-	margin-left: 150px;
-	text-align: center;
-}
-
-#stars #jennifer {
-	float: right;
-	margin-right: 150px;
-	text-align: center;
-}*/
-
-/* STARS SECTION */
+/* --------------------------
+STARS SECTION 
+----------------------------*/
 #stars {
 	margin-left: auto;
 	margin-right: auto;
@@ -113,13 +99,17 @@ hr {
 	border-color: #763978;
 }
 
-/* MOVIE LOGO */
+/* ------------------
+MOVIE LOGO 
+-----------------------------*/
 #movie-logo {
 	padding-top: 10px;
  text-align: center;
 }
 
-/* CO-STAR SECTION */
+/* ------------------------
+CO-STAR SECTION 
+---------------------------------*/
 #co-star {
 	padding-bottom: 20px;
 	/*margin-left: 35%; added to media query*/
@@ -130,9 +120,12 @@ hr {
 	text-align: center;
 }
 
-/* SNEAK PEEK VIDEOS SECTION */
+/* -----------------------
+SNEAK PEEK VIDEOS SECTION 
+-------------------------------*/
 #sneak-peek {
 	padding-top: 10px;
+	padding-bottom: 25px;
 }
 
 .purple-box {
@@ -148,7 +141,9 @@ hr {
 	padding-bottom: 20px;*/
 }
 
-/* SPECIAL PRICING SECTION */
+/* -------------------------------
+SPECIAL PRICING SECTION 
+-----------------------------------*/
 .big-box {
 	/*box-sizing: border-box;*/
 	width: 1155px;
@@ -169,7 +164,9 @@ hr {
 	font-size: 22px;
 }
 
-/* BOOK NOW BUTTON */
+/* -----------------------
+BOOK NOW BUTTON 
+-------------------------------*/
 .btn-primary {
 	width: 300px;
 	height: 50px;
@@ -212,7 +209,9 @@ hr {
 	font-size: 20px;
 }
 
-/* ABOUT BOOK */
+/* ------------------------------
+ABOUT BOOK 
+----------------------------------*/
 #about-book {
 	padding-top: 50px;
 	margin-left: 2%;
@@ -235,12 +234,21 @@ hr {
 	font-style: normal;
 }
 
-/* FOOTER */
+.indent {
+	text-indent: 1em;
+}
+
+/* ---------------------------
+FOOTER 
+--------------------------------*/
 #footer {
 	background-color: #1f1b35;
-	height: 100px;
+	/*height: 100px;*/
+	height: 130px;
 	width: 100%;
 	max-width: 100%;
+	/*margin-bottom: 0;*/
+	position: absolute;
 }
 
 ul {
@@ -251,10 +259,13 @@ ul {
 ul li {
 	display: inline-block;
 	padding-top: 20px;
+/*	padding: 5px;*/
 }
 
 #footer p {
 	word-spacing: 0.2em;
+/*	display: inline-block;*/
+	/*padding: 5px;*/
 }
 
 #footer .footer-info {
@@ -264,13 +275,28 @@ ul li {
 
 #footer a {
 	color: #763978;
+	/*text-decoration: underline;*/
+}
+
+.email a:link {
+	text-decoration: underline;
+}
+
+#last-symbol {
+	color: #FFFFFF;
 }
 
 #privacy {
 	text-align: center;
 }
 
-/* Media Queries */
+#privacy a:link{
+	text-decoration: underline;
+}
+
+/* ------------------------
+Media Queries 
+------------------------------*/
 @media (max-width: 840px) {
 	header p {
 		font-size: 14px;
@@ -310,8 +336,8 @@ ul li {
 }
 
 @media (max-width: 580px) {
-	#movie-logo {
-		max-width: 50%;
+	#movie-logo img {
+		max-width: 75%;
 	}
 }
 
@@ -327,8 +353,29 @@ ul li {
 	}
 }
 
+@media (max-width: 600px) {
+	.name {
+		font-size: 18px;
+	}
+}
 
+@media (max-width: 600px) {
+	.indent {
+		text-indent: 0;
+	}
+}
 
+@media (max-width: 700px) {
+	#footer ul li {
+	line-height: 0.2em		
+	}
+}
+
+@media (max-width: 460px) {
+	#footer {
+		height: 170px;
+	}
+}
 
 
 
