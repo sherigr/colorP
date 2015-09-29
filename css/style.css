@@ -29,30 +29,44 @@ h6 {
 	margin: 0 auto;
 }*/
 
+.purple-text {
+	color: #763978;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.normal-font {
+	font-style: normal;
+}
+
 .wrap-pad {
 	margin-left: 10%;
 	margin-right: 10%;
 }
 
+/* HEADER SECTION */
 #header { 
 	background-color: #763978;
 	height: 50px;
 	width: 100%;
 	max-width: 100%;
-/*	overflow: visible;
-	position: relative;*/
+/*	overflow: visible;*/
+	position: relative;
 }
 
 header p {
 	padding: 10px;
 	font-style: italic;
-	font-size: 23px;
+	font-size: 22px;
 	text-align: center;
 	z-index: 1000;
 }
 
+/* PREVIEW SECTION */
 #preview {
-	text-align: center;
+	/*text-align: center;*/
 }
 
 #preview h2 {
@@ -64,18 +78,12 @@ header p {
 	font-style: italic;
 }
 
-.normal-font {
-	font-style: normal;
-}
+
 
 /*#stars .column {
 	position: relative;
 	float: left;
 }*/
-
-.purple-text {
-	color: #763978;
-}
 
 /*#stars #cynthia {
 	float: left;
@@ -89,6 +97,7 @@ header p {
 	text-align: center;
 }*/
 
+/* STARS SECTION */
 #stars {
 	margin-left: auto;
 	margin-right: auto;
@@ -104,15 +113,16 @@ hr {
 	border-color: #763978;
 }
 
+/* MOVIE LOGO */
 #movie-logo {
 	padding-top: 10px;
  text-align: center;
 }
 
-
+/* CO-STAR SECTION */
 #co-star {
 	padding-bottom: 20px;
-	margin-left: 35%;
+	/*margin-left: 35%; added to media query*/
 	text-align: center;
 }
 
@@ -120,6 +130,7 @@ hr {
 	text-align: center;
 }
 
+/* SNEAK PEEK VIDEOS SECTION */
 #sneak-peek {
 	padding-top: 10px;
 }
@@ -137,7 +148,7 @@ hr {
 	padding-bottom: 20px;*/
 }
 
-
+/* SPECIAL PRICING SECTION */
 
 .big-box {
 	box-sizing: border-box;
@@ -148,11 +159,11 @@ hr {
 	padding: 25px;
 }
 
-.inner-box {
+/*.inner-box {
 	border: 2px solid #292441;
 	background-color: #763978;
 	z-index: 1200;
-}
+}*/
 
 .book-now {
 	width: 300px;
@@ -161,10 +172,16 @@ hr {
 	/*text-align: center;*/
 }
 
+.box-text {
+	padding-top: 20px;
+}
+
 #special-pricing {
 	border: #292441;
 	text-align: center;
 }
+
+/* ABOUT BOOK */
 
 #about-book {
 	padding-top: 50px;
@@ -184,7 +201,7 @@ hr {
 	font-style: normal;
 }
 
-
+/* FOOTER */
 #footer {
 	background-color: #1f1b35;
 	height: 100px;
@@ -215,8 +232,65 @@ ul li {
 	text-align: center;
 }
 
+/* Media Queries */
+@media (max-width: 840px) {
+	header p {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 990px) {
+	#cynthia {
+		text-align: center;
+	}
+}
+
+@media (max-width: 990px) {
+	#jennifer {
+		text-align: center;
+	}
+}
+
+@media (max-width: 990px) {
+	#stars h2 {
+		font-size: 22px;
+	}
+}
+
+@media (max-width: 768px) {
+	#preview h2 {
+		font-size: 22px;
+		line-height: 1.4em;
+	}
+}
+
+@media (max-width: 768px) {
+	#preview h3 {
+		font-size: 18px;
+		line-height: 1.4em;
+	}
+}
+
+@media (max-width: 580px) {
+	#movie-logo {
+		max-width: 50%;
+	}
+}
+
+/*@media (max-width: 768px) {
+	#co-star {
+		margin-left: none;
+	}
+}*/
+
+@media (min-width: 768px) {
+	#co-star {
+		margin-left: 35%;
+	}
+}
 
 
-/*Also Starring text
-font-style: Baskerville;
-font-size: 19.65px; */
+
+
+
+
