@@ -149,52 +149,86 @@ hr {
 }
 
 /* SPECIAL PRICING SECTION */
-
 .big-box {
-	box-sizing: border-box;
-	width: 1200px;
+	/*box-sizing: border-box;*/
+	width: 1155px;
 	height: 300px;
 	background-color: #763978;
 	border: 2px solid #292441;
 	padding: 25px;
 }
 
-/*.inner-box {
-	border: 2px solid #292441;
-	background-color: #763978;
-	z-index: 1200;
-}*/
+.special-pricing {
+	margin-top: 5px;
+	font-size: 30px;
+}
 
-.book-now {
+#tickets {
+	padding-bottom: 10px;
+	line-height: 1.5em;
+	font-size: 22px;
+}
+
+/* BOOK NOW BUTTON */
+.btn-primary {
 	width: 300px;
-	height: 30px;
+	height: 50px;
 	background-color: #292441;
-	/*text-align: center;*/
+	border-color: #292441;
 }
 
-.box-text {
-	padding-top: 20px;
+.btn-lg {
+	border-radius: 0;
 }
 
-#special-pricing {
-	border: #292441;
+.btn.btn-primary:hover {
+	background-color: #FFFFFF;
+}
+
+.book-now h4 {
+	padding: 15px;
 	text-align: center;
 }
 
-/* ABOUT BOOK */
+.btn-group-lg>.btn, .btn-lg {
+	padding: 0;
+}
 
+
+#box-text {
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	padding-top: 20px;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	letter-spacing: .2em;
+	border: 2px solid #292441;
+}
+
+#phone {
+	padding-top: 20px;
+	font-size: 20px;
+}
+
+/* ABOUT BOOK */
 #about-book {
 	padding-top: 50px;
 	margin-left: 2%;
+	padding-bottom: 40px;
 }
 
-#about-book h4 {
-	word-spacing: .2em;
+.name {
+	font-size: 20px;
 }
 
-/*#about-book .full-name {
-	font-size: .4em;
-}*/
+#about-book p {
+	/*font-size: 18px;*/
+	font-size: 16px;
+	letter-spacing: 0.1em;
+	word-spacing: 0.1em;
+}
 
 .uppercase {
 	text-transform: uppercase;
@@ -217,6 +251,10 @@ ul {
 ul li {
 	display: inline-block;
 	padding-top: 20px;
+}
+
+#footer p {
+	word-spacing: 0.2em;
 }
 
 #footer .footer-info {
