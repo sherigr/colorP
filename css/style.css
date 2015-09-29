@@ -1,0 +1,222 @@
+
+
+body{
+	background-color: #292441;
+	color: #FFFFFF;
+	font-family: 'Libre Baskerville', serif;
+/*	text-align: center;*/
+/*	margin-left: 100px;
+	margin-right: 100px;*/
+/*	overflow-x: hidden;
+	overflow-y: hidden;*/
+	font-style: italic;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #FFFFFF;
+  font-weight: 400;
+  font-family:'Libre Baskerville', serif;
+}
+
+/*#container {
+	width: 980px;
+	margin: 0 auto;
+}*/
+
+.wrap-pad {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+#header { 
+	background-color: #763978;
+	height: 50px;
+	width: 100%;
+	max-width: 100%;
+/*	overflow: visible;
+	position: relative;*/
+}
+
+header p {
+	padding: 10px;
+	font-style: italic;
+	font-size: 23px;
+	text-align: center;
+	z-index: 1000;
+}
+
+#preview {
+	text-align: center;
+}
+
+#preview h2 {
+	font-style: normal;
+	font-weight: 400;
+}
+
+#preview h3 {
+	font-style: italic;
+}
+
+.normal-font {
+	font-style: normal;
+}
+
+/*#stars .column {
+	position: relative;
+	float: left;
+}*/
+
+.purple-text {
+	color: #763978;
+}
+
+/*#stars #cynthia {
+	float: left;
+	margin-left: 150px;
+	text-align: center;
+}
+
+#stars #jennifer {
+	float: right;
+	margin-right: 150px;
+	text-align: center;
+}*/
+
+#stars {
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 20px;
+}
+
+#cynthia {
+	text-align: right;
+}
+
+
+hr {
+	border-color: #763978;
+}
+
+#movie-logo {
+	padding-top: 10px;
+ text-align: center;
+}
+
+
+#co-star {
+	padding-bottom: 20px;
+	margin-left: 35%;
+	text-align: center;
+}
+
+#co-star h4, h3 {
+	text-align: center;
+}
+
+#sneak-peek {
+	padding-top: 10px;
+}
+
+.purple-box {
+	width: 560px;
+	height: 50px;
+	background-color: #763978;
+}
+
+#sneak-peek h3 {
+	text-align: center;
+	padding-top: 10px;
+/*	margin-top: 20px; 
+	padding-bottom: 20px;*/
+}
+
+
+
+.big-box {
+	box-sizing: border-box;
+	width: 1200px;
+	height: 300px;
+	background-color: #763978;
+	border: 2px solid #292441;
+	padding: 25px;
+}
+
+.inner-box {
+	border: 2px solid #292441;
+	background-color: #763978;
+	z-index: 1200;
+}
+
+.book-now {
+	width: 300px;
+	height: 30px;
+	background-color: #292441;
+	/*text-align: center;*/
+}
+
+#special-pricing {
+	border: #292441;
+	text-align: center;
+}
+
+#about-book {
+	padding-top: 50px;
+	margin-left: 2%;
+}
+
+#about-book h4 {
+	word-spacing: .2em;
+}
+
+/*#about-book .full-name {
+	font-size: .4em;
+}*/
+
+.uppercase {
+	text-transform: uppercase;
+	font-style: normal;
+}
+
+
+#footer {
+	background-color: #1f1b35;
+	height: 100px;
+	width: 100%;
+	max-width: 100%;
+}
+
+ul {
+	list-style-type: none;
+	text-align: center;
+}
+
+ul li {
+	display: inline-block;
+	padding-top: 20px;
+}
+
+#footer .footer-info {
+/*	display: inline-block;
+	position: relative;*/
+}
+
+#footer a {
+	color: #763978;
+}
+
+#privacy {
+	text-align: center;
+}
+
+
+
+/*Also Starring text
+font-style: Baskerville;
+font-size: 19.65px; */
