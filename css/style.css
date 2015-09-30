@@ -454,6 +454,13 @@ Media Queries
 
 @media (max-width: 460px) {
 	#footer {
-		height: 170px;
+		height: 200px;
+		width: 100%;		
+	}
+	#footer .row {
+		margin-right: 40px;
 	}
 }
+
+
+
