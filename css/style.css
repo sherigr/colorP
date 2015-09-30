@@ -452,6 +452,12 @@ Media Queries
 	}
 }
 
+@media (min-width: 533px) and (max-width: 600px) {
+	#footer {
+		height: 170px;
+	}
+}
+
 @media (max-width: 460px) {
 	#footer {
 		height: 200px;
