@@ -458,11 +458,25 @@ Media Queries
 	}
 }
 
-@media (max-width: 460px) {
+/*@media (max-width: 460px) {
 	#footer {
-		height: 200px;
+		height: 220px;
 		width: 100%;		
 	}
+	#footer .row {
+		margin-right: 40px;
+	}
+}*/
+/* testing this addition*/ 
+
+@media (max-width: 480px) {
+	#footer {
+		height: 220px;
+		width: 100%;		
+	}
+}
+
+@media (max-width: 460px) {
 	#footer .row {
 		margin-right: 40px;
 	}
@@ -473,8 +487,6 @@ Media Queries
 		margin-right: 0;
 	}
 }
-
-
 
 
 
