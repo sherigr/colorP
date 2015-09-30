@@ -215,6 +215,7 @@ ABOUT BOOK
 }
 
 #about-book p {
+	/*font-size: 18px;*/
 	font-size: 16px;
 	letter-spacing: 0.1em;
 	word-spacing: 0.1em;
@@ -243,9 +244,29 @@ FOOTER
 	position: absolute;
 }
 
+/* ADDED THIS FOR FOOTER TEST*/
+.container {
+/*	margin: 0;*/
+	padding-top: 25px;
+}
+/* ALSO ADDED FOR TEST*/
+.container p {
+	display: inline;
+	vertical-align: baseline;
+	text-align: center;
+	margin: 0 auto;
+	padding-right: 10px;
+}
+
+.container a {
+	text-align: center;
+}
+
 ul {
 	list-style-type: none;
 	text-align: center;
+	/* testing */
+	position: relative;
 }
 
 ul li {
@@ -280,6 +301,7 @@ ul li {
 
 #privacy {
 	text-align: center;
+	line-height: 2px;
 }
 
 #privacy a:link{
@@ -402,6 +424,20 @@ Media Queries
 	#about-book {
 		text-align: center;
 	}
+}
+
+@media (min-width: 667px) and (max-width: 736px) {
+	#footer {
+		height: 160px;
+	}
+
+	#footer .row {
+		margin-right: 40px;
+	}
+
+/*	.email-pipe {
+		display: none;
+	} effecting line display*/
 }
 
 @media (min-width: 648px) and (max-width: 760px) {
