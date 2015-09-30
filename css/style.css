@@ -10,7 +10,6 @@ body{
 /*	overflow-x: hidden;
 	overflow-y: hidden;*/
 	font-style: italic;
-
 }
 
 h1,
@@ -104,7 +103,7 @@ MOVIE LOGO
 -----------------------------*/
 #movie-logo {
 	padding-top: 10px;
- text-align: center;
+	text-align: center;
 }
 
 /* ------------------------
@@ -145,8 +144,8 @@ SNEAK PEEK VIDEOS SECTION
 SPECIAL PRICING SECTION 
 -----------------------------------*/
 .big-box {
-	/*box-sizing: border-box;*/
-	width: 1155px;
+/*	width: 1155px;*/
+width: 100%;
 	height: 300px;
 	background-color: #763978;
 	border: 2px solid #292441;
@@ -335,17 +334,11 @@ Media Queries
 	}
 }
 
-@media (max-width: 580px) {
+@media (max-width: 1024px) {
 	#movie-logo img {
-		max-width: 75%;
+		max-width: 50%;
 	}
 }
-
-/*@media (max-width: 768px) {
-	#co-star {
-		margin-left: none;
-	}
-}*/
 
 @media (min-width: 768px) {
 	#co-star {
@@ -367,7 +360,7 @@ Media Queries
 
 @media (max-width: 700px) {
 	#footer ul li {
-	line-height: 0.2em		
+		line-height: 0.2em		
 	}
 }
 
@@ -377,5 +370,60 @@ Media Queries
 	}
 }
 
+@media (max-width: 800px) {
+	.special-pricing {
+		font-size: 20px;
+	}
+}
 
+@media (max-width: 800px) {
+	#tickets, #phone {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 640px) {
+	.special-pricing {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 640px) {
+	#tickets, #phone {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 414px) {
+	#preview h2 {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 480px) {
+	#movie-logo img {
+		max-width: 40%;
+	}
+}
+
+/* book now button */
+@media (max-width: 768px) {
+	.btn-primary {
+		width: 150px;
+		height: 30px;
+	}
+}
+
+/*book now text */
+@media (max-width: 768px) {
+	#box-text h4 {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 1375px) {
+	#about-book {
+		text-align: center;
+	}
+}
 
