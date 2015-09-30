@@ -468,5 +468,21 @@ Media Queries
 	}
 }
 
+@media (min-width: 370px) and (max-width: 375px) {
+	#footer .row {
+		margin-right: 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
