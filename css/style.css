@@ -78,7 +78,7 @@ STARS SECTION
 #stars {
 	margin-left: auto;
 	margin-right: auto;
-	padding-bottom: 20px;
+	padding-bottom: 40px;
 }
 
 #cynthia {
@@ -88,6 +88,7 @@ STARS SECTION
 
 hr {
 	border-color: #763978;
+	margin: 0px 140px 0 140px;
 }
 
 #cynthia-first {
@@ -97,6 +98,10 @@ hr {
 #jennifer-first {
 	margin-left: 20px;
 }
+
+/*hr #second {
+	margin-bottom: 20px;
+}*/
 
 /* ------------------
 MOVIE LOGO 
@@ -110,7 +115,7 @@ MOVIE LOGO
 CO-STAR SECTION 
 ---------------------------------*/
 #co-star {
-	padding-bottom: 20px;
+	padding-bottom: 40px;
 	text-align: center;
 }
 
@@ -122,7 +127,7 @@ CO-STAR SECTION
 SNEAK PEEK VIDEOS SECTION 
 -------------------------------*/
 #sneak-peek {
-	padding-top: 10px;
+	padding-top: 40px;
 	padding-bottom: 25px;
 }
 
