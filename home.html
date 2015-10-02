@@ -20,18 +20,15 @@
 	</head>
 
 	<body>
-
-		<header>			
-			<div id="header" class="container-fluid">
-				<div class="row"> 
-					<div class="col-md-12">
-						<div class="text-center">
-							<p>Just announced! Danielle Brooks (Orange Is The New Black) joins the cast.</p>
-						</div> <!--text-center -->
-					</div> <!-- col-md-12-->
-				</div> <!-- row -->
-			</div> <!-- #header -->
-		</header>
+	
+		<nav id="header" class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <!-- <div class="announced-header"> -->
+		      <p>Just announced! Danielle Brooks (Orange Is The New Black) joins the cast.</p>
+		    </div>
+		       <!-- </div> --> <!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
 
 		<!--Preview Text Section -->
 		<div class="wrap-pad">
@@ -39,8 +36,8 @@
 				<div class="row">
 					<div class="col-md-12">
 						<h2 class="normal-font preview">BROADWAY PREVIEWS BEGIN NOVEMBER 9</h2>
-						<h3 class="purple-text"><i>Scott Sanders Roy Furman Oprah Winfrey David Babani/Tom Siracusa</i></h3>
-						<h3 class="purple-text">Present the<img src="img/chocfactory.png"> Production</h3>
+						<h3 class="purple-text"><span id="scott">Scott Sanders</span> <span id="roy">Roy Furman</span> <span id="oprah">Oprah Winfrey</span> <span id="david">David Babani/Tom Siracusa</span></h3>
+						<h3 id="production" class="purple-text">Presented by the<img src="img/chocfactory.png"> Production</h3>
 					</div> <!-- row-->
 				</div> <!-- col-md-12-->
 			</div> <!-- preview -->
@@ -49,11 +46,11 @@
 		<!--Starring Pictures -->
 		<div id="stars" class="row">
 			<div id="cynthia" class="col-md-6 col-sm-6">
-				<h2>Cynthia <span class="normal-font">ERIVO</span></h2>
+				<h2 id="cynthia-first">Cynthia <span class="normal-font">ERIVO</span></h2>
 				<img class="cynthia" src="img/cynthia-2.png" height="390" width="350" class="img-rounded">
 			</div> <!--col-md-6 -->
 			<div id="jennifer" class="col-md-6 col-sm-6">
-				<h2>Jennifer <span class="normal-font">HUDSON</span></h2>
+				<h2 id="jennifer-first">Jennifer <span class="normal-font">HUDSON</span></h2>
 				<img class="jennifer" src="img/hudson.png" height="390" width="350" class="img-rounded">
 			</div> <!--col-md-6 -->
 		</div> <!-- stars row-->
@@ -127,47 +124,59 @@
 		<section id="about-book" class="row">
 			<div class="wrap-pad">
 				<div class="col-md-12">
-					<p class="purple-text">Book by <span class="name"> Marsha<span class="uppercase name"> NORMAN</span> Music and Lyrics by <span class="name"> Brenda<span class="uppercase name"> RUSSELL</span><span class="name"> Allee <span class="uppercase name">WILLIS</span><span class="name"> Stephen<span class="uppercase name"> BRAY</span></p>
-					<p class="purple-text indent">Based upon the novel written by Alice <span class="uppercase"> WALKER</span> and the Warner Bros. / Amblin Entertainment Motion Picture</p>
-					<p class="purple-text text-center">Directed by<span class="name"> John <span class="uppercase name"> DOYLE</p>
+					<p class="purple-text">Book by <span class="name"> Marsha</span><span class="uppercase name"> NORMAN</span> Music and Lyrics by <span class="name"> Brenda<span class="uppercase name"> RUSSELL</span><span class="name"> Allee <span class="uppercase name">WILLIS</span><span class="name"> Stephen<span class="uppercase name"> BRAY</span></p>
+
+					<p class="purple-text indent paragraph">Based upon the novel written by Alice <span class="uppercase"> WALKER</span> and the Warner Bros. / Amblin Entertainment Motion Picture</p>
+
+					<p class="purple-text text-center paragraph">Directed by<span class="name"> John <span class="uppercase name"> DOYLE</p>
 				</div><!-- col-md-12 col-sm-6-->
 			</div> <!--wrap-pad -->
 		</section> <!--about-book -->
 
-		<div id="footer"> 
-			<div class="row">
-				<div class="col-md-12">
-					<section>
-						<ul>
+		<div id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<ul class="theatre-address">
 							<li>
-								<img src="img/bernard.jpg">
-							<li>
-								<p>Bernard B. Jacobs Theatre</p></li>
-							<li>
-								<p> |  242 West 45th Street, NYC</p>					
+								<p><img src="img/bernard.jpg" alt="theatre- icon" id="theatre-icon">
+								</p>
 							</li>
 							<li>
-								<p class="email"><span class="email-pipe"> | <a href="">  Sign up for email updates</p>								
-							</li> 
-							<li id="last-symbol"><span class="email-pipe"> | </li>
+								<p>Bernard B. Jocobs Theatre <span id="theatre-pipe" class="pipe"> | </span>
+								</p>
+							</li>
 							<li>
-								<a href="https://www.facebook.com/ColorPurpleMusical?_rdr=p" target="_blank"><img src="img/fb.jpg">
-								</li>
-							<li>
-								<a href="https://twitter.com/bwaycolorpurple" target="_blank"><img src="img/twitter.jpg">
-								</li>
-							<li>
-								<a href="https://www.youtube.com/channel/UCqNDSZs09-CniiEqHJQKTQw" target="_blank"><img src="img/youtube.jpg">
-							</li>				
-						</ul>
-					</section>
-						<ul>
-							<li id="privacy"><a href="privacy policy">Privacy Policy
+								<p>242 West 45th Street, NYC <span id="nyc-pipe" class="pipe"> | </span>
+								</p>
 							</li>
 						</ul>
-				</div> <!-- col-md-12-->
-			</div> <!--row -->
-		</div> <!--footer -->
+
+						<ul class="social-icons">
+							<li>
+								<p id="email">
+									<a href="">Sign up for email updates</a> <span> | </span>
+								</p>
+							</li>
+							<li>
+								<a href="https://www.facebook.com/ColorPurpleMusical?_rdr=p" target="_blank"><img src="img/fb.jpg"></a>
+							</li>
+							<li>
+								<a href="https://twitter.com/bwaycolorpurple" target="_blank"><img src="img/twitter.jpg"></a>
+							</li>
+							<li>
+								<a href="https://www.youtube.com/channel/UCqNDSZs09-CniiEqHJQKTQw" target="_blank"><img src="img/youtube.jpg"></a>
+							</li>
+						</ul>
+
+						<div>
+							<a href="" id="privacy">Privacy Policy</a>
+						</div>
+										
+					</div> <!--- col-md-12 -->
+				</div> <!-- row -->
+			</div> <!-- container -->
+		</div> <!-- footer -->
 
 	</body>
 </html>
