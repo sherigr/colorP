@@ -38,6 +38,9 @@ h6 {
 	background-color: #763978;
 	height: 50px;
 	border: none;
+	width: 100%;
+	max-width: 100%;
+	padding: 0;
 }
 
 #header p {
@@ -88,7 +91,7 @@ STARS SECTION
 
 hr {
 	border-color: #763978;
-	margin: 0px 140px 0 140px;
+	margin: 0px 140px;
 }
 
 #cynthia-first {
@@ -321,6 +324,12 @@ Media Queries
 	}
 }
 
+@media (min-width: 1024px) and (max-width: 1280px) {
+	hr {
+		margin: 0px 130px;
+	}
+}
+
 @media (max-width: 1200px) {
 	#nyc-pipe {
 		display: none;
@@ -355,6 +364,12 @@ Media Queries
 	}
 }
 
+@media (min-width: 800px) and (max-width: 960px) {
+	hr {
+		margin: 0px 100px;
+	}
+}
+
 @media (min-width: 630px) and (max-width: 848px) { 
 	#header p {
 		font-size: 16px;
@@ -368,6 +383,12 @@ Media Queries
 
 	#tickets, #phone {
 		font-size: 18px;
+	}
+}
+
+@media (max-width: 799px) {
+	hr {
+		margin: 0px 80px;
 	}
 }
 
@@ -439,6 +460,10 @@ Media Queries
 	#movie-logo img {
 		max-width: 40%;
 	}
+
+	#footer a {
+		font-size: 14px;
+	}
 }
 
 @media (max-width: 414px) {
@@ -451,6 +476,10 @@ Media Queries
 	#sneak-peek h3 {
 		font-size: 14px;
 		padding-top: 20px;
+	}
+
+	#email-pipe {
+		display: none;
 	}
 }
 
