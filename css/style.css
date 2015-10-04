@@ -34,6 +34,9 @@ h6 {
 	margin-right: 10%;
 }
 
+/* -----------------------
+HEADER
+---------------------------------*/
 #header {
 	background-color: #763978;
 	height: 50px;
@@ -51,11 +54,11 @@ h6 {
 /* -----------------------
 PREVIEW SECTION 
 ---------------------------------*/
-
 #preview h2 {
 	font-style: normal;
 	font-weight: 400;
 	margin-top: 8px;
+	padding-top: 10px;
 }
 
 #preview h3 {
@@ -86,7 +89,6 @@ STARS SECTION
 #cynthia {
 	text-align: right;
 }
-
 
 hr {
 	border-color: #763978;
@@ -120,7 +122,6 @@ CO-STAR SECTION
 #co-star h4, h3 {
 	text-align: center;
 }
-
 /* -----------------------
 SNEAK PEEK VIDEOS SECTION 
 -------------------------------*/
@@ -138,7 +139,6 @@ SNEAK PEEK VIDEOS SECTION
 	text-align: center;
 	padding-top: 10px;
 }
-
 /* -------------------------------
 SPECIAL PRICING SECTION 
 -----------------------------------*/
@@ -188,7 +188,6 @@ BOOK NOW BUTTON
 	padding: 0;
 }
 
-
 #box-text {
 	box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -236,7 +235,6 @@ ABOUT BOOK
 	text-indent: 1em;
 }
 
-
 /*--------------------------
 FOOTER
 ------------------------------*/
@@ -270,7 +268,6 @@ FOOTER
 }
 
 #theatre-icon {
-/*	margin-right: -10px;*/
 	margin-right: -5px;
 	padding-right: 3px;
 }
@@ -279,9 +276,6 @@ FOOTER
 	padding-left: 7px;
 }
 
-/*#email {
-	font-style: normal;
-}*/
 #email p {
 	font-style: normal;
 	margin-left: -40px;
@@ -294,11 +288,6 @@ FOOTER
 	ul.social-icons  {
 	padding-left: 0;
 }
-
-/*.social-icons {
-	margin-right: 20px;
-	margin-left: -40px;
-}*/
 
 #footer a {
 	color: #763978;
@@ -314,24 +303,9 @@ FOOTER
 	text-decoration: underline;
 }
 
-
 /* ------------------------
 Media Queries 
 ------------------------------*/
-/*@media (max-width: 1375px) {
-	#about-book {
-		text-align: center;
-	}
-}*/
-
-/*@media (min-width: 1320px) {
-	#about-book p {
-	letter-spacing: 0.1em;
-	word-spacing: 0.1em;
-	margin-left: -50px;
-	}
-}*/
-
 @media (min-width: 1320px) {
 	#about-book p {
 	letter-spacing: 0.1em;
@@ -339,12 +313,6 @@ Media Queries
 	margin-left: -50px;
 	}
 }
-
-/*@media (min-width: 1024px) and (max-width: 1280px) {
-	hr {
-		margin: 0px 130px;
-	}
-}*/
 
 @media (min-width: @screen-lg-min) {
 	hr {
@@ -397,12 +365,6 @@ Media Queries
 	}
 }
 
-/*@media (min-width: 800px) and (max-width: 960px) {
-	hr {
-		margin: 0px 100px;
-	}
-}*/
-
 @media (min-width: 630px) and (max-width: 848px) { 
 	#header p {
 		font-size: 16px;
@@ -419,19 +381,12 @@ Media Queries
 	}
 }
 
-/*@media (max-width: 799px) {
-	hr {
-		margin: 0px 80px;
-	}
-}*/
-
 @media (min-width: 768px) {
 	#co-star {
 		margin-left: 35%;
 	}
 }
 
-/* test extra footer padding bottom */
 @media (@screen-md-max) {
 	#footer {
 		padding-bottom: 120px;
@@ -489,17 +444,10 @@ Media Queries
 }
 
 @media (max-width: 599px) {
-		/*playing around w/pipe size */
 	#theatre-pipe {
 		display: none;
 	}
 }
-
-/*@media (max-width: 580px) {
-	#theatre-pipe {
-		display: none;
-	}
-}*/
 
 @media (max-width: 480px) {
 	#movie-logo img {
@@ -509,10 +457,6 @@ Media Queries
 	#footer a {
 		font-size: 14px;
 	}
-
-/*	#theatre-pipe {
-		display: none;
-	}*/
 }
 
 @media (max-width: 432px) {
@@ -526,16 +470,6 @@ Media Queries
 		font-size: 20px;
 	}
 }
-
-/*@media (max-width: 360px) {
-	.social-icons {
-		margin-right: 48px;
-		margin-left: -5px;
-	}
-	#email-pipe {
-		display: none;		
-	}
-}*/
 
 @media (max-width: 360px) {
 	#email-pipe {
