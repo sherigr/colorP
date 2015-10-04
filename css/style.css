@@ -58,13 +58,9 @@ PREVIEW SECTION
 	margin-top: 8px;
 }
 
-#preview h3 {
-	font-style: italic;
-}
-
 #production h3 {
 	line-height: 3px;
-		padding-top: 10px;	
+	padding-top: 10px;	
 }
 
 #scott, 
@@ -101,10 +97,6 @@ hr {
 #jennifer-first {
 	margin-left: 20px;
 }
-
-/*hr #second {
-	margin-bottom: 20px;
-}*/
 
 /* ------------------
 MOVIE LOGO 
@@ -241,7 +233,6 @@ ABOUT BOOK
 	text-indent: 1em;
 }
 
-
 /*--------------------------
 FOOTER
 ------------------------------*/
@@ -306,7 +297,6 @@ FOOTER
 #privacy a {
 	text-decoration: underline;
 }
-
 
 /* ------------------------
 Media Queries 
