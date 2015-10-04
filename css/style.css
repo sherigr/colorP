@@ -422,7 +422,7 @@ Media Queries
 /* test extra footer padding bottom */
 @media (@screen-md-max) {
 	#footer {
-		padding-bottom: 80px;
+		padding-bottom: 120px;
 	}
 }
 
@@ -512,7 +512,9 @@ Media Queries
 	.social-icons {
 		margin-right: 48px;
 		margin-left: -5px;
-		display: none;
+	}
+	#email-pipe {
+		display: none;		
 	}
 }
 
