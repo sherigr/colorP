@@ -40,7 +40,6 @@ h6 {
 	border: none;
 	width: 100%;
 	max-width: 100%;
-	padding: 0;
 }
 
 #header p {
@@ -59,6 +58,10 @@ PREVIEW SECTION
 	margin-top: 8px;
 }
 
+#preview h3 {
+	font-style: italic;
+}
+
 #production h3 {
 	line-height: 3px;
 	padding-top: 10px;	
@@ -75,8 +78,8 @@ PREVIEW SECTION
 STARS SECTION 
 ----------------------------*/
 #stars {
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: 0 auto;
+	margin-right: 0 auto;
 	padding-bottom: 40px;
 }
 
@@ -87,7 +90,7 @@ STARS SECTION
 
 hr {
 	border-color: #763978;
-	margin: 0px 140px;
+	margin: 0 140px;
 }
 
 #cynthia-first {
@@ -233,6 +236,7 @@ ABOUT BOOK
 	text-indent: 1em;
 }
 
+
 /*--------------------------
 FOOTER
 ------------------------------*/
@@ -266,7 +270,8 @@ FOOTER
 }
 
 #theatre-icon {
-	margin-right: -10px;
+/*	margin-right: -10px;*/
+	margin-right: -5px;
 	padding-right: 3px;
 }
 
@@ -274,14 +279,26 @@ FOOTER
 	padding-left: 7px;
 }
 
-#email {
+/*#email {
 	font-style: normal;
-}
-
-.social-icons {
-	margin-right: 20px;
+}*/
+#email p {
+	font-style: normal;
 	margin-left: -40px;
 }
+
+ .social-icons ul li a {
+	margin-left: -40px;
+}
+
+	ul.social-icons  {
+	padding-left: 0;
+}
+
+/*.social-icons {
+	margin-right: 20px;
+	margin-left: -40px;
+}*/
 
 #footer a {
 	color: #763978;
@@ -297,14 +314,23 @@ FOOTER
 	text-decoration: underline;
 }
 
+
 /* ------------------------
 Media Queries 
 ------------------------------*/
-@media (max-width: 1375px) {
+/*@media (max-width: 1375px) {
 	#about-book {
 		text-align: center;
 	}
-}
+}*/
+
+/*@media (min-width: 1320px) {
+	#about-book p {
+	letter-spacing: 0.1em;
+	word-spacing: 0.1em;
+	margin-left: -50px;
+	}
+}*/
 
 @media (min-width: 1320px) {
 	#about-book p {
@@ -314,9 +340,21 @@ Media Queries
 	}
 }
 
-@media (min-width: 1024px) and (max-width: 1280px) {
+/*@media (min-width: 1024px) and (max-width: 1280px) {
 	hr {
 		margin: 0px 130px;
+	}
+}*/
+
+@media (min-width: @screen-lg-min) {
+	hr {
+		margin: 0 140px;
+	}
+}
+
+@media (min-width: @screen-md-min) {
+	hr {
+		margin: 0 130px;
 	}
 }
 
@@ -353,11 +391,17 @@ Media Queries
 	}
 }
 
-@media (min-width: 800px) and (max-width: 960px) {
+@media (min-width: @screen-sm-min) and (max-width: screen-max) {
 	hr {
 		margin: 0px 100px;
 	}
 }
+
+/*@media (min-width: 800px) and (max-width: 960px) {
+	hr {
+		margin: 0px 100px;
+	}
+}*/
 
 @media (min-width: 630px) and (max-width: 848px) { 
 	#header p {
@@ -375,13 +419,26 @@ Media Queries
 	}
 }
 
-@media (max-width: 799px) {
+/*@media (max-width: 799px) {
 	hr {
 		margin: 0px 80px;
 	}
+}*/
+
+@media (min-width: 768px) {
+	#co-star {
+		margin-left: 35%;
+	}
 }
 
-@media (max-width: 768px) {
+/* test extra footer padding bottom */
+@media (@screen-md-max) {
+	#footer {
+		padding-bottom: 120px;
+	}
+}
+
+@media (max-width: 767px) {
 	#preview h2 {
 		font-size: 22px;
 		line-height: 1.4em;
@@ -407,12 +464,6 @@ Media Queries
 	}
 }
 
-@media (min-width: 768px) {
-	#co-star {
-		margin-left: 35%;
-	}
-}
-
 @media (max-width: 640px) {
 	.special-pricing {
 		font-size: 14px;
@@ -421,9 +472,7 @@ Media Queries
 	#tickets, #phone {
 		font-size: 14px;
 	}
-}
 
-@media (max-width: 629px) {
 	#header p {
 		font-size: 14px;
 		padding: 5px;
@@ -439,11 +488,11 @@ Media Queries
 	}
 }
 
-@media (max-width: 580px) {
+/*@media (max-width: 580px) {
 	#theatre-pipe {
 		display: none;
 	}
-}
+}*/
 
 @media (max-width: 480px) {
 	#movie-logo img {
@@ -453,7 +502,17 @@ Media Queries
 	#footer a {
 		font-size: 14px;
 	}
+
+/*	#theatre-pipe {
+		display: none;
+	}*/
 }
+
+@media (max-width: 432px) {
+	#sneak-peek h3 {
+		font-size: 14px;
+		padding-top: 20px;
+	}
 
 @media (max-width: 414px) {
 	#preview h2 {
@@ -461,22 +520,18 @@ Media Queries
 	}
 }
 
-@media (max-width: 320px) {
-	#sneak-peek h3 {
-		font-size: 14px;
-		padding-top: 20px;
+/*@media (max-width: 360px) {
+	.social-icons {
+		margin-right: 48px;
+		margin-left: -5px;
 	}
+	#email-pipe {
+		display: none;		
+	}
+}*/
 
+@media (max-width: 360px) {
 	#email-pipe {
 		display: none;
 	}
 }
-
-
-
-
-
-
-
-
-
