@@ -488,6 +488,13 @@ Media Queries
 	}
 }
 
+@media (max-width: 599px) {
+		/*playing around w/pipe size */
+	#theatre-pipe {
+		display: none;
+	}
+}
+
 /*@media (max-width: 580px) {
 	#theatre-pipe {
 		display: none;
