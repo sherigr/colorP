@@ -240,30 +240,16 @@ ABOUT BOOK
 /*--------------------------
 FOOTER
 ------------------------------*/
-/*#footer {
+#footer {
 	background-color: #1f1b35;
 	width: 100%;
 	max-width: 100%;
 	position: relative;
 	text-align: center;
 	padding-bottom: 30px;
-}*/
-
-.footer {
-	background-color: #1f1b35;
-	width: 100%;
-	max-width: 100%;
-position: absolute;
-	text-align: center;
-bottom: 0;
 }
 
-/*#footer p {
-	font-size: 16px;
-	word-spacing: 0.2em;
-}*/
-
-.footer p {
+#footer p {
 	font-size: 16px;
 	word-spacing: 0.2em;
 }
