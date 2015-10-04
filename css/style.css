@@ -58,6 +58,10 @@ PREVIEW SECTION
 	margin-top: 8px;
 }
 
+#preview h3 {
+	font-style: italic;
+}
+
 #production h3 {
 	line-height: 3px;
 	padding-top: 10px;	
@@ -74,8 +78,8 @@ PREVIEW SECTION
 STARS SECTION 
 ----------------------------*/
 #stars {
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: 0 auto;
+	margin-right: 0 auto;
 	padding-bottom: 40px;
 }
 
@@ -86,8 +90,7 @@ STARS SECTION
 
 hr {
 	border-color: #763978;
-	/*margin: 0px 140px;*/
-	margin: 0px 80px;
+	margin: 0 140px;
 }
 
 #cynthia-first {
@@ -233,6 +236,7 @@ ABOUT BOOK
 	text-indent: 1em;
 }
 
+
 /*--------------------------
 FOOTER
 ------------------------------*/
@@ -242,7 +246,6 @@ FOOTER
 	max-width: 100%;
 	position: relative;
 	text-align: center;
-	margin: 0;
 	padding-bottom: 30px;
 }
 
@@ -298,6 +301,7 @@ FOOTER
 	text-decoration: underline;
 }
 
+
 /* ------------------------
 Media Queries 
 ------------------------------*/
@@ -307,18 +311,6 @@ Media Queries
 	}
 }*/
 
-@media (min-width: @screen-lg-min) {
-	#about-book {
-		text-align: center;
-	}
-
-	#about-book p {
-	letter-spacing: 0.1em;
-	word-spacing: 0.1em;
-	margin-left: -50px;
-	}
-}
-
 /*@media (min-width: 1320px) {
 	#about-book p {
 	letter-spacing: 0.1em;
@@ -326,6 +318,14 @@ Media Queries
 	margin-left: -50px;
 	}
 }*/
+
+@media (min-width: 1320px) {
+	#about-book p {
+	letter-spacing: 0.1em;
+	word-spacing: 0.1em;
+	margin-left: -50px;
+	}
+}
 
 /*@media (min-width: 1024px) and (max-width: 1280px) {
 	hr {
@@ -335,13 +335,13 @@ Media Queries
 
 @media (min-width: @screen-lg-min) {
 	hr {
-		margin: 0px 140px;
+		margin: 0 140px;
 	}
 }
 
 @media (min-width: @screen-md-min) {
 	hr {
-		margin: 0px 130px;
+		margin: 0 130px;
 	}
 }
 
@@ -352,6 +352,7 @@ Media Queries
 	.paragraph {
 		padding-top: 10px;
 	}
+
 }
 
 @media (max-width: 1024px) {
@@ -383,6 +384,7 @@ Media Queries
 		margin: 0px 100px;
 	}
 }
+
 /*@media (min-width: 800px) and (max-width: 960px) {
 	hr {
 		margin: 0px 100px;
@@ -403,10 +405,6 @@ Media Queries
 	#tickets, #phone {
 		font-size: 18px;
 	}
-
-	#preview h3 img {
-
-	}
 }
 
 /*@media (max-width: 799px) {
@@ -415,13 +413,7 @@ Media Queries
 	}
 }*/
 
-/*@media (min-width: @screen-sm-min) {
-	#co-star {
-		margin-left: 35%;
-	}
-}*/
-
-@media (min-width: 767px) {
+@media (min-width: 768px) {
 	#co-star {
 		margin-left: 35%;
 	}
@@ -453,7 +445,6 @@ Media Queries
 	}
 }
 
-
 @media (max-width: 640px) {
 	.special-pricing {
 		font-size: 14px;
@@ -462,20 +453,12 @@ Media Queries
 	#tickets, #phone {
 		font-size: 14px;
 	}
-	#header p {
-		font-size: 14px;
-		padding: 10px;
-	}
-}
-/*@media (max-width: 640px) {
-	
-}*/
-/*@media (max-width: 629px) {
+
 	#header p {
 		font-size: 14px;
 		padding: 5px;
 	}
-}*/
+}
 
 @media (max-width: 600px) {
 	.name {
@@ -522,12 +505,3 @@ Media Queries
 		display: none;
 	}
 }
-
-
-
-
-
-
-
-
-
