@@ -419,6 +419,13 @@ Media Queries
 	}
 }
 
+/* test extra footer padding bottom */
+@media (@screen-md-max) {
+	#footer {
+		padding-bottom: 80px;
+	}
+}
+
 @media (max-width: 767px) {
 	#preview h2 {
 		font-size: 22px;
@@ -489,19 +496,28 @@ Media Queries
 	}
 }
 
+@media (max-width: 432px) {
+	#sneak-peek h3 {
+		font-size: 14px;
+		padding-top: 20px;
+	}
+
 @media (max-width: 414px) {
 	#preview h2 {
 		font-size: 20px;
 	}
 }
 
-@media (max-width: 320px) {
-	#sneak-peek h3 {
-		font-size: 14px;
-		padding-top: 20px;
-	}
-
-	#email-pipe {
+@media (max-width: 360px) {
+	.social-icons {
+		margin-right: 48px;
+		margin-left: -5px;
 		display: none;
 	}
 }
+
+/*@media (max-width: 320px) {
+	#email-pipe {
+		display: none;
+	}
+}*/
