@@ -244,9 +244,11 @@ FOOTER
 	background-color: #1f1b35;
 	width: 100%;
 	max-width: 100%;
-	position: relative;
+/*	position: relative;*/
+position: absolute;
 	text-align: center;
-	padding-bottom: 30px;
+/*	padding-bottom: 30px;*/
+bottom: 0;
 }
 
 #footer p {
