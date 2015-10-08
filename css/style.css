@@ -92,7 +92,7 @@ STARS SECTION
 
 hr {
 	border-color: #763978;
-	margin: 0 140px;
+	margin: 0 150px;
 }
 
 #cynthia-first {
@@ -210,7 +210,6 @@ ABOUT BOOK
 ----------------------------------*/
 #about-book {
 	padding-top: 50px;
-	margin-left: 2%;
 	padding-bottom: 40px;
 }
 
@@ -220,10 +219,9 @@ ABOUT BOOK
 
 #about-book p {
 	font-size: 16px;
-	letter-spacing: 1px;
-	word-spacing: 1px;
 	text-align: center;
-	margin-left: -35px;
+	letter-spacing: 0.12em;
+	word-spacing: 0.1em;
 }
 
 .uppercase {
@@ -247,12 +245,16 @@ FOOTER
 	padding-bottom: 30px;
 }
 
+#footer .col-md-12 {
+	padding-top: 12px;
+}
+
 #footer p {
 	font-size: 16px;
 	word-spacing: 0.2em;
 }
 
- ul 	{
+ul 	{
 	display: inline-block;
 }
 
@@ -285,7 +287,7 @@ FOOTER
 	margin-left: -40px;
 }
 
-	ul.social-icons  {
+ul.social-icons  {
 	padding-left: 0;
 }
 
@@ -306,26 +308,6 @@ FOOTER
 /* ------------------------
 Media Queries 
 ------------------------------*/
-@media (min-width: 1320px) {
-	#about-book p {
-	letter-spacing: 0.1em;
-	word-spacing: 0.1em;
-	margin-left: -50px;
-	}
-}
-
-@media (min-width: @screen-lg-min) {
-	hr {
-		margin: 0 140px;
-	}
-}
-
-@media (min-width: @screen-md-min) {
-	hr {
-		margin: 0 130px;
-	}
-}
-
 @media (max-width: 1200px) {
 	#nyc-pipe {
 		display: none;
@@ -338,6 +320,12 @@ Media Queries
 @media (max-width: 1024px) {
 	#movie-logo img {
 		max-width: 50%;
+	}
+}
+
+@media (max-width: 992px) {
+	hr {
+		margin: 0 80px;
 	}
 }
 
@@ -359,12 +347,6 @@ Media Queries
 	}
 }
 
-@media (min-width: @screen-sm-min) and (max-width: screen-max) {
-	hr {
-		margin: 0px 100px;
-	}
-}
-
 @media (min-width: 630px) and (max-width: 848px) { 
 	#header p {
 		font-size: 16px;
@@ -381,15 +363,14 @@ Media Queries
 	}
 }
 
-@media (min-width: 768px) {
-	#co-star {
-		margin-left: 35%;
+@media (max-width: 768px) {
+	.name {
+		font-size: 16px;
 	}
-}
-
-@media (@screen-md-max) {
-	#footer {
-		padding-bottom: 120px;
+	#about-book p {
+		font-size: 14px;
+		margin-left: 20px;
+		margin-right: 20px;
 	}
 }
 
@@ -461,7 +442,7 @@ Media Queries
 
 @media (max-width: 432px) {
 	#sneak-peek h3 {
-		font-size: 14px;
+		font-size: 16px;
 		padding-top: 20px;
 	}
 
