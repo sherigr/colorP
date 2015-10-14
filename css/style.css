@@ -101,6 +101,8 @@ hr {
 
 #jennifer-first {
 	margin-left: 20px;
+	/*adding */
+	text-align: center;
 }
 
 /* ------------------
@@ -242,7 +244,6 @@ FOOTER
 	max-width: 100%;
 	position: relative;
 	text-align: center;
-	/*padding-bottom: 30px;*/
 }
 
 .footer {
@@ -442,7 +443,6 @@ Media Queries
 	#footer a {
 		font-size: 14px;
 	}
-	/* testing image sizes*/
 	#cynthia img  {
 		height: 200px;
 		width: 200px;
@@ -461,7 +461,6 @@ Media Queries
 		height: 40px;
 		width: 140px;
 	}
-	/* end of test*/
 }
 
 @media (max-width: 432px) {
